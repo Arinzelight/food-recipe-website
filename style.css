@@ -1,0 +1,84 @@
+
+body{
+    background-color: var(--body-bg-color);
+    color: var(--body-color);
+    
+}
+
+.navbar {
+    background-color: var(--nav-bg-color) ;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7.5rem;
+  }
+
+  .navbar a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .navbar a:hover {
+    border-bottom: 3px solid crimson;
+  }
+
+
+
+  .navbar-content {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  .navbar-content::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and newer Edge */
+  }
+
+  .main-section{
+    margin: 20px;
+  }
+
+  .banner-section{
+    background-image: url(images/banner.webp);
+    position: relative;
+    height: 600px; /* Set the desired height */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 3em;
+    font-size: 1.5em;
+  }
+
+
+.banner-section .text-overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+.banner-btn{
+    border-radius: 4px;
+    border: none;
+    padding: 18px 35px;
+    
+}  
+
+
+button{
+    background-color: var(--btn-color);
+}
+
+button:hover{
+    opacity: 1.5;
+    cursor: pointer;
+}
