@@ -1,18 +1,19 @@
 :root {
-    --fonts-heading: brandon-grotesque-mobile, "Helvetica Neue", Helvetica, arial, sans-serif;
-    --fonts-base: Gotham-mobile, "Helvetica Neue", Helvetica, arial, sans-serif;
-    --body-text-color: #1D1D1D;
-    --body-bg-color: #FFFFFF;
-    --body-color: #2f2f2f;
-    --nav-bg-color: #000;
-    --info-color: #666;
-    --btn-color: #f5ce35;
-    --footer-text-color: #FFFFFF;
-    --footer-background-color: #1D1D1D;
-  }
-  
-  body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-  }
+  --fonts-heading: brandon-grotesque-mobile, "Helvetica Neue", Helvetica, arial,
+    sans-serif;
+  --fonts-base: Gotham-mobile, "Helvetica Neue", Helvetica, arial, sans-serif;
+  --body-text-color: #1d1d1d;
+  --body-bg-color: #ffffff;
+  --body-color: #2f2f2f;
+  --nav-bg-color: #000;
+  --info-color: #666;
+  --btn-color: #f5ce35;
+  --footer-text-color: #ffffff;
+  --footer-background-color: #1d1d1d;
+  --blue: rgb(35, 121, 213);
+}
 
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
