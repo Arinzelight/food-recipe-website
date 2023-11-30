@@ -1,80 +1,98 @@
-body {
-  background-color: var(--body-bg-color);
-  color: var(--body-color);
+
+body{
+    background-color: var(--body-bg-color);
+    color: var(--body-color);
+    
 }
+
+/* Navbar */
 
 .navbar {
-  background-color: var(--nav-bg-color);
-  overflow: hidden;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 7.5rem;
-}
+    background-color: var(--nav-bg-color) ;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7.5rem;
+  }
 
-.navbar a {
-  color: #fff;
-  padding: 14px 16px;
-  text-decoration: none;
-  display: inline-block;
-}
+  .navbar a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--fonts-heading);
+  }
 
-.navbar a:hover {
-  border-bottom: 3px solid crimson;
-}
+  .navbar a:hover {
+    border-bottom: 3px solid var(--btn-color);
+  }
 
-.navbar-content {
-  white-space: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-}
 
-.navbar-content::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and newer Edge */
-}
 
-.main-section {
-  margin: 20px;
-}
+  .navbar-content {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
 
-.banner-section {
-  background-image: url(images/banner.webp);
-  position: relative;
-  height: 600px; /* Set the desired height */
-  background-size: cover;
-  background-position: center;
-  color: white;
-  line-height: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  padding-left: 3em;
-  font-size: 1.5em;
-}
+  .navbar-content::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and newer Edge */
+  }
+
+  /* main section */
+
+  .main-section{
+    margin: 20px;
+  }
+
+  .banner-section{
+    background:rgba(0,0,0,0.5)url(images/banner.webp);
+    background-blend-mode: darken;
+    position: relative;
+    font-family: var(--fonts-heading);
+    height: 600px; /* Set the desired height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 3em;
+    font-size: 1.5em;
+  }
+
 
 .banner-section .text-overlay h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    
 }
 
-.banner-btn {
-  border-radius: 4px;
-  border: none;
-  padding: 18px 35px;
+
+.banner-btn{
+    border-radius: 4px;
+    border: none;
+    padding: 18px 35px;
+    
+}  
+
+
+button{
+    background-color: var(--btn-color);
 }
 
-button {
-  background-color: var(--btn-color);
+button:hover{
+    opacity: 1.5;
+    cursor: pointer;
 }
 
-button:hover {
-  opacity: 1.5;
-  cursor: pointer;
-}
-
+/* Review section */
 .reviews-section {
   padding: 20px;
 }
@@ -152,4 +170,97 @@ button:hover {
 
 .timing i {
   cursor: pointer;
+}
+
+
+
+
+/* Food Collection */
+
+.categorie{
+  /* border-bottom: 3px solid crimson; */
+  margin-top: 4rem;
+  font-family: var(--fonts-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  line-height: 32px;
+}
+
+
+.food-collection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px auto;
+}
+
+.food-collection .item1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('images/what-we-are-craving-for.webp');
+  
+}
+.food-collection .item2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('images/what-we-are-craving-for2.webp');
+ 
+}
+.food-collection .item3 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('images/what-we-are-craving-for3.webp');
+}
+
+.food-collection .collection-item{
+  height: 400px; /* Set the desired height */
+  width: 32%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  
+}
+.food-collection .collection-item:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+
+.food-collection h2, p{
+  font-family: var(--fonts-heading);
+  margin-left: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+ 
+}
+
+.food-collection h2{
+  font-weight: 900;
+}
+
+.food-collection h2{
+  line-height: 2rem;
+}
+
+
+
+
+@media only screen and (max-width: 837px){
+  .food-collection .collection-item{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+}
+@media only screen and (max-width: 600px){
+   .banner-section {
+      font-size: 0.6rem;
+      background-repeat: no-repeat;
+    }
+
 }
