@@ -74,3 +74,82 @@ button:hover {
   opacity: 1.5;
   cursor: pointer;
 }
+
+.reviews-section {
+  padding: 20px;
+}
+
+.reviews-section .reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-header h1 {
+  font-size: 36px;
+}
+
+.review-header a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.reviews .review-card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-card .profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile h3 {
+  color: rgb(22, 144, 172);
+}
+.profile h3 span {
+  color: #333;
+}
+
+.review-card .profile-img img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.review-card .post-img img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.review-card .timing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-card .ratings i {
+  margin-left: 2px;
+  color: rgb(154, 75, 75);
+}
+
+.timing > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timing i {
+  cursor: pointer;
+}
