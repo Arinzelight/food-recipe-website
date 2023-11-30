@@ -1,36 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Recipe</title>
-    <link rel="stylesheet" href="definitions.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="definitions.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- Navbar section -->
     <nav class="navbar">
-        <div class="nav-content1">
-            <img src="logo.png" alt="FOOD" class="logo">
-        </div>
-        <div class="navbar-content">
-          <a href="#">RECIPE</a>
-          <a href="#">POPULAR</a>
-          <a href="#">MEAT & SEAFOOD</a>
-          <a href="#">HEATHY & DIET</a>
-          <a href="#">HOLIDAYS</a>
-          <a href="#">CUISINE</a>
-          <a href="#">SEASONAL</a>
-        
-        </div> 
+      <div class="nav-content1">
+        <img src="logo.png" alt="FOOD" class="logo" />
+      </div>
+      <div class="navbar-content">
+        <a href="#">RECIPE</a>
+        <a href="#">POPULAR</a>
+        <a href="#">MEAT & SEAFOOD</a>
+        <a href="#">HEATHY & DIET</a>
+        <a href="#">HOLIDAYS</a>
+        <a href="#">CUISINE</a>
+        <a href="#">SEASONAL</a>
+      </div>
     </nav>
     <!-- Main section -->
     <div class="main-section">
-        <div class="banner-section">
-                <h1>TOP 100 COMFORT</h1>
-                <h1>FOOD RECIPES</h1>
-                <button class="banner-btn">SEE THEM ALL</button>
+      <div class="banner-section">
+        <h1>TOP 100 COMFORT</h1>
+        <h1>FOOD RECIPES</h1>
+        <button class="banner-btn">SEE THEM ALL</button>
+      </div>
+      <div class="reviews-section">
+        <header class="review-header">
+          <h1>Fresh from the community</h1>
+          <a href="#">View all</a>
+        </header>
+
+        <div class="reviews">
+          <div class="review-card">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/taco.png" alt="taco" />
+              </div>
+              <h3 class="profile-name">
+                Ashaa <span>reviewed</span> skyline chilli dip
+              </h3>
+            </div>
+            <div class="post-img">
+              <img src="images/image-01.webp" alt="" />
+            </div>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <p class="post-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+              illum!
+            </p>
+
+            <div class="timing">
+              <p class="time-posted">11:59pm</p>
+              <div>
+                <p>Reply</p>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/taco.png" alt="taco" />
+              </div>
+              <h3 class="profile-name">
+                asaaa <span>asked a question about</span> Ground Turkey Chili
+                For People
+              </h3>
+            </div>
+
+            <p class="post-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+              illum!
+            </p>
+
+            <div class="timing">
+              <p class="time-posted">An hour ago</p>
+              <div>
+                <p>Reply</p>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/taco.png" alt="taco" />
+              </div>
+              <h3 class="profile-name">
+                Destiny.heinrich <span>tweaked</span> No-Bake Chocolate, Peanut
+                Butter, Corn...
+              </h3>
+            </div>
+            <p class="post-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              fugiat tenetur perspiciatis repellendus quidem sit facilis ipsa
+              quis odio totam cum expedita cumque vero, quos ducimus soluta vel.
+              Sint, eius.
+            </p>
+
+            <div class="timing">
+              <p class="time-posted">A minute ago</p>
+              <div>
+                <p>Reply</p>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
