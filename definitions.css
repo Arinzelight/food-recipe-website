@@ -1,10 +1,11 @@
 :root {
-
+    --fonts-heading: brandon-grotesque-mobile, "Helvetica Neue", Helvetica, arial, sans-serif;
+    --fonts-base: Gotham-mobile, "Helvetica Neue", Helvetica, arial, sans-serif;
     --body-text-color: #1D1D1D;
     --body-bg-color: #FFFFFF;
     --body-color: #2f2f2f;
     --nav-bg-color: #000;
-    --info-color: #767676;
+    --info-color: #666;
     --btn-color: #f5ce35;
     --footer-text-color: #FFFFFF;
     --footer-background-color: #1D1D1D;
@@ -14,3 +15,4 @@
     margin: 0;
     -webkit-font-smoothing: antialiased;
   }
+
