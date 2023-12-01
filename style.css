@@ -99,8 +99,11 @@ button{
     background-color: var(--btn-color);
 }
 
+
+
+
 button:hover{
-    opacity: 1.5;
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -332,6 +335,43 @@ button:hover{
 }
 
 
+/* Article */
+
+.article-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 30px 0;
+  border: 2px solid #F2F2F2;
+}
+
+.article-container:hover{
+  box-shadow: var(--card-box-shadow);
+}
+
+.article-container .image-wrapper{
+  width: 58%;
+}
+
+.article-container .sub-info{
+  font-family: var(--fonts-base);
+  width: 40%;
+  line-height: 1.6;
+
+}
+
+.article-container .sub-info p{
+  text-transform: lowercase;
+  color: var(--info-color);
+}
+.article-container .image-wrapper img{
+  width: 100%;
+}
+
+
+
 /* Trending */
 
 .trending-container{
@@ -341,6 +381,8 @@ button:hover{
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+
 .trending-item{
   height: 360px;
   width: 23%;
@@ -355,6 +397,10 @@ button:hover{
   border: 2px solid #F2F2F2;
   cursor: pointer;
   position: relative;
+}
+
+.trending-item:hover{
+  box-shadow: var(--card-box-shadow)
 }
 
 .trending-container h3{
@@ -419,11 +465,47 @@ button:hover{
 }
 
 
+/* Search section */
+
+.search-container{
+  background-color: #f2f2f2;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 21px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.search-container .search-heading{
+  text-align: center;
+  font-family: var(--fonts-heading);
+}
+.search-container .search-bar{
+  width: 60%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.search-container .search-button{
+  width: 23%;
+  padding: 12px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+
 
 
 /* Footer start */
 footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #111;
@@ -513,6 +595,16 @@ footer i {
     height: 60%;
   }
 
+  .article-container .image-wrapper{
+    width: 100%;
+  }
+  
+  .article-container .sub-info{
+    width: 100%;
+    margin-left: 10px;
+    text-align: left;
+  }
+
 }
 @media only screen and (max-width: 768px){
    .banner-section {
@@ -533,11 +625,12 @@ footer i {
       grid-template-columns: 1fr; 
     }
 
+    footer{
+      gap: 3rem;
+    }
+
+   
+
     
 }
 
-/* @media (width > 767px) and (width < 1100px) {
-  .reviews {
-    grid-template-columns: 1fr; 
-  }
-} */
