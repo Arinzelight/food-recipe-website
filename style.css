@@ -400,11 +400,12 @@ footer i {
   footer {
     flex-direction: column;
     gap: 20px;
-    justify-content: left;
+    align-items: flex-start;
+    padding: 20px 20px;
   }
 
   footer p {
-    text-align: center;
+    text-align: left;
   }
 
   footer ul {
@@ -417,6 +418,19 @@ footer i {
 
   footer .rhs {
     align-items: normal;
-    border: 2px solid red;
+  }
+
+  footer .rhs div {
+    align-items: flex-start;
+  }
+
+  footer .rhs ul {
+    justify-content: start;
+  }
+
+  footer .rhs ul:nth-of-type(2) {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
   }
 }
